@@ -36,7 +36,8 @@ app.get("/view", (req, res) => {
         <h2>📺 Live Camera Feed</h2>
         <img id="img" width="480"/>
         <script>
-          const ws = new WebSocket("ws://" + location.host);
+          const proto = location.protocol === "https:" ? "wss://" : "ws://";
+          const ws = new WebSocket(proto + location.host);
           ws.onmessage = e => {
             if (e.data instanceof Blob) {
               document.getElementById("img").src =
