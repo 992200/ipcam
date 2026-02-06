@@ -1,0 +1,8 @@
+body { background:#0f172a; color:white; font-family:Arial; }
+.app { text-align:center; padding:20px; }
+video { width:300px; border:2px solid #22c55e; margin:10px; }
+button { padding:10px 16px; background:#22c55e; border:none; border-radius:6px; }
+
+.viewer { margin-top: 20px; }
+.viewer img { border: 2px solid #22c55e; border-radius: 8px; background: #020617; }
+a { color: #93c5fd; }
